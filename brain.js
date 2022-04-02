@@ -46,7 +46,7 @@ module.exports = arus = async (arus, m, chatUpdate, store) => {
         const groupOwner = m.isGroup ? groupMetadata.owner : ''
     	const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
     	const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
-    const time = moment.tz('Asia/Kolkata').format('DD/MM HH:mm:ss')
+    const time = moment.tz('Africa/Nairobi').format('DD/MM HH:mm:ss')
         //db fetch
     let _exp = tb.get(`${m.sender}.exp`)
     let _items = tb.get(`${m.sender}.items`)
@@ -164,12 +164,12 @@ case '':
 
     const dbut = [
 {buttonId: '=help', buttonText: {displayText: '🍂 Help'}, type: 1},
-{buttonId: '=mods', buttonText: {displayText: '💥 Arus Team'}, type: 1}
+{buttonId: '=mods', buttonText: {displayText: '💥 Wᴀᴍᴏᴄʜᴏ '}, type: 1}
 ]
 let buttonMessaged = {
-        image: {url:"https://telegra.ph/file/645707c1698c8a9515953.jpg"},
+        image: {url:"https://telegra.ph/file/97ad903ba5a233f75a751.jpg"},
         caption: `*DID YOU MEAN =help ?*`,
-        footer: '©MIZUHARA~ARUS',
+        footer: '©Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ',
         buttons: dbut,
         headerType: 4
     }
@@ -181,7 +181,7 @@ let buttonMessaged = {
 
 case 'help':
 const hlp=
-` *U^I^U ♡ Konichiwa ${pushname} Senpai, I'm Mizuhara*
+` *U^I^U ♡ Niaje ${pushname} Rada, I'm Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ*
 🎋 \`\`\`Here are my listed commands, Have fun in using them:-\`\`\`
 🈸 *GENERAL* 🈸
 \`\`\`🎯 profile
@@ -227,7 +227,7 @@ const hlp=
 🎯 play
 🎯 google
 🎯 image\`\`\`
- 🍁 *©Powered by Arus* 🍁`
+ 🍁 *©Powered by Sketchy ke* 🍁`
            arus.sendMessage(m.chat,{video:fs.readFileSync('./src/help.mp4'),gifPlayback:true,caption:hlp},{quoted:m})
 break
 
@@ -236,23 +236,23 @@ case 'info':
 const ibut = [
 {buttonId: '=profile', buttonText: {displayText: '🎋 Profile'}, type: 1},
 {buttonId: '=help', buttonText: {displayText: '🍂 Help'}, type: 1},
-{buttonId: '=mods', buttonText: {displayText: '💥 Arus Team'}, type: 1}
+{buttonId: '=mods', buttonText: {displayText: '💥 Wᴀᴍᴏᴄʜᴏ '}, type: 1}
 ]
-const inf=`❁ ════ ❃•💙 *MIZUHARA* 💙•❃ ════ ❁
+const inf=`❁ ════ ❃•💙 Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ💙•❃ ════ ❁
 \`\`\`A FULL FLEDGED MULTI DEVICE WHATSAPP BOT WITH COOL FEATURES\`\`\`
 ❁ ═══ ❃•📕 *INFORMATION*📕•❃ ═══ ❁
 \`\`\`A simple and easy-to-use WhatsApp bot project based on Multi-Device Baileys and written in JavaScript\`\`\`
 ❁ ══════ ❃•📄 *NOTE* 📄•❃ ══════ ❁
 \`\`\`This bot is a free open source project by THE TEAM ARUS\`\`\`
 ❁ ═════ ❃•📑 *GITHUB* 📑•❃ ═════ ❁
-*_LINK:- https://github.com/Arus-Bots/Mizuhara_*
+*_LINK:- https://github.com/GingerBreadSketchy_*
 ❁ ═══ ❃•✍🏻 *CONTRIBUTE* ✍🏻•❃ ═══ ❁
 \`\`\`Feel free to open issues regarding any problems or if you have any feature feel free to contact owner by typing =owner or =mods\`\`\` 
 `
 let buttonMessagei = {
-        image: { url: "https://telegra.ph/file/05a5910097d3dd9743ebb.jpg" },
+        image: { url: "https://telegra.ph/file/97ad903ba5a233f75a751.jpg" },
         caption: inf,
-        footer: '©MIZUHARA~ARUS',
+        footer: '©Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ',
         buttons: ibut,
         headerType: 4
     }
@@ -263,33 +263,22 @@ break
 case 'mods':
 const mod=`❁ ════ ❃• *MODERATORS* •❃ ════ ❁
 #1
-💥 *Username: Pratyush*
-🍁 *Contact: https://wa.me/+918231033230*
+💥 *Username: GIngerBreadSketchy*
+🍁 *Contact: https://wa.me/+254792893310*
 #2
-💥 *Username: AiZen*
-🍂 *Contact: https://wa.me/+918709022955*
-#3
-💥 *Username: Tomioka*
-🍁 *Contact: https://wa.me/+917003213983*
-#4
-💥 *Username: Death*
-🍁 *Contact: https://wa.me/+917604016334*
-#5
-💥 *Username: Arin*
-🍁 *Contact: https://wa.me/+919330880626*
-#6
-💥 *Username: Manish*
-🍁 *Contact: https://wa.me/+919106196230*
-━━━━°❀•°:🤍 *MIZUHARA* 🤍:°•❀°━━━━`
+💥 *Username: Sketchy*
+🍂 *Contact: https://wa.me/+254732989905*
+
+━━━━°❀•°:🤍 Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ🤍:°•❀°━━━━`
 const mbut = [
 {buttonId: '=creator', buttonText: {displayText: '🎋 Creator'}, type: 1},
 {buttonId: '=help', buttonText: {displayText: '🍂 Help'}, type: 1},
-{buttonId: '=mods', buttonText: {displayText: '💥 Arus Team'}, type: 1}
+{buttonId: '=mods', buttonText: {displayText: '💥 Wᴀᴍᴏᴄʜᴏ '}, type: 1}
 ]
 let buttonMessagem = {
-        image: { url: "https://telegra.ph/file/05a5910097d3dd9743ebb.jpg" },
+        image: { url: "https://telegra.ph/file/97ad903ba5a233f75a751.jpg" },
         caption: mod,
-        footer: '©MIZUHARA~ARUS',
+        footer: '©Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ',
         buttons: mbut,
         headerType: 4
     }
@@ -390,7 +379,7 @@ const buttonsd = [
 let buttonMessage = {
         image: { url: pfp },
         caption: profile,
-        footer: '©MIZUHARA~ARUS',
+        footer: '©Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ',
         buttons: buttonsd,
         headerType: 4
     }
@@ -512,7 +501,7 @@ case 'tourl': {
                 if (!isAdmins) m.reply(mess.admin)
         let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
         await arus.groupParticipantsUpdate(m.chat, [users], 'demote')
-        arus.sendMessage(m.chat,{text:`OOPs!! looks like someone demoted @${users.split("@")[0]}`,contextInfo: { mentionedJid: [users] }})
+        arus.sendMessage(m.chat,{text:`OOPs!! looks like someone Got demoted @${users.split("@")[0]}`,contextInfo: { mentionedJid: [users] }})
    }
     break
   case 'setdesc': {
@@ -640,7 +629,7 @@ case  'play': case 'ytplay': {
 📓 Channel : ${anu.author.url}
 🎬 Description : ${anu.description}
 🌐 Url : ${anu.url}`,
-        footer: '©MIZUHARA~Arus',
+        footer: '©Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ',
         buttons: buttons,
         headerType: 4
     }
@@ -716,7 +705,7 @@ case 'gimage':case 'image': {
                     caption: `
 💥 *Query* : ${text}
 `,
-                    footer: '©MIZUHARA~Arus',
+                    footer: '©Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ',
                     buttons: buttons,
                     headerType: 4
                 }
@@ -749,7 +738,7 @@ case 'gimage':case 'image': {
       let buttonsMessage = {
        image: {url:waifud.data.url},
        caption:  `*Here is your waifu*`,
-      footer: '©MIZUHARA~Arus',
+      footer: '©Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ',
       buttons: wbutss,
       headerType: 4
       }
@@ -767,7 +756,7 @@ case 'neko':
       let buttonssMessage = {
        image: {url:waifud.data.url},
        caption:  `*Here is your 🐱Neko*`,
-      footer: '©MIZUHARA~Arus',
+      footer: '©Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ',
       buttons: wbutsss,
       headerType: 4
       }
@@ -787,7 +776,7 @@ case 'kemonomimi':
       let buttonssMessages = {
        image: {url:waifudd.data.url},
        caption:  `*Here You Go...*`,
-      footer: '©MIZUHARA~Arus',
+      footer: '©Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ',
       buttons: wbuttsss,
       headerType: 4
       }     
@@ -890,7 +879,7 @@ var walb = [
       let wal = {
        image: {url:wallpaper[i].image},
        caption: `*Query :* ${q}`,
-      footer: '©MIZUHARA~Arus',
+      footer: '©Wᴀᴍᴏᴄʜᴏ ʙʏ sᴋᴇᴛᴄʜʏ',
       buttons: walb,
       headerType: 4
       }     
@@ -905,7 +894,7 @@ arus.sendMessage(m.chat,{text:`Baka!! Try using the commands from help list`},{q
         
 
     } catch (err) {
-        const time = moment.tz('Asia/Kolkata').format('DD/MM HH:mm:ss')
+        const time = moment.tz('Africa/Nairobi').format('DD/MM HH:mm:ss')
         arus.sendMessage("120363041582995306@g.us",{text:`*Time:* ${time}\n\n`+`*ERROR:* ${util.format(err)}`})
     
     }
