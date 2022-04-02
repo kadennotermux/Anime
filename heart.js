@@ -27,7 +27,7 @@ const getVersionWaweb = () => {
 }
 
 async function startArus() {
-    CFonts.say('MIZUHARA\nBY\nARUS', {
+    CFonts.say('wamocho\nBY\nsketchy', {
         font: 'block',
         align: 'center',
         gradient: ['blue', 'magenta']
@@ -35,7 +35,7 @@ async function startArus() {
     const arus = arusConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Mizuhara','Safari','1.0.0'],
+        browser: ['Wamocho','Safari','1.0.0'],
         auth: state,
         version: getVersionWaweb() || [2, 2204, 13]
     })
